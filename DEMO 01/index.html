@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(name, birthDay, gender, email, tel, address) {
+                this.name = name;
+                this.birthDay = birthDay;
+                this.gender = gender;
+                this.email = email;
+                this.tel = tel;
+                this.address = address;
+            }
+            getAge() {
+                let now = new Date();
+                return now.getFullYear() - this.birthDay;
+            }
+            getEmail() {
+                return this.email;
+            }
+        }
+        let phuoc = new Person("Phước", 1997, "Male", "Hoang.phuoc1110@gmail.com", "0789037342",
+            "11/4 Ngô Thời Nhậm - TP Huế");
+        console.log(phuoc.getAge());
+        document.write(phuoc.getEmail());
+
+        let anh = new Student
+    </script>
+</body>
+</html>
