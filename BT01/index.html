@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid rgba(21, 212, 187, 0.808)"></canvas>
+    <script src="main.js"></script>
+    <script>
+        let recta = new Rectangle(300, 200);
+        console.log(recta.getArea());
+        console.log(recta.getPer());
+        let myCanvas = document.getElementById('myCanvas');
+        let ctx = myCanvas.getContext('2d');
+        recta.setHeight(250);
+        recta.setWidth(300);
+        // document.write("Diện tích hình chữ nhật là: " + recta.getArea());
+        // ctx.fillStyle = "blue";
+        // ctx.fillRect(100, 100, 150, 60);
+        document.write('<br/>');
+        document.write("Diện tích hình chữ nhật là: " + recta.getArea() + " - " + "Chu vi hình chữ nhật là: " + recta.getPer());
+    </script>
+</body>
+
+</html>
